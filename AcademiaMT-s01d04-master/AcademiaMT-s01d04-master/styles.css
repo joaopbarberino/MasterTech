@@ -1,0 +1,141 @@
+body{
+    
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, minmax(100px, auto));
+    grid-template-areas:
+        "header header header header header"
+        "sidebar sidebar sidebar sidebar sidebar"
+        "mano mano mano mano mano";
+
+}
+
+header{
+    align-items: center;
+    background-color: rgb(44, 43, 43);
+    color: rgb(73, 160, 132);
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    grid-area: header;
+    justify-content: space-between;
+    padding: 0 10px; 
+}
+
+
+/* header nav a:nth-child(1) {
+    
+    font-size: 20pt;
+} */
+
+header nav{
+    display: none;
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(73, 160, 132);
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid;
+    margin: 0px;
+}
+
+
+.menu-hamburguer {
+    align-items: center;
+    cursor: pointer;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    width: 30px;
+    
+    
+}
+
+
+.traco{
+    background-color: rgb(73, 160, 132);
+    border-radius: 50px;
+    height: 3px;
+    margin: 2px 0;
+    width: 100%;
+}
+
+main{
+    grid-area: mano;
+
+}
+
+.sidebar{
+    background-color: rgb(73, 160, 132);
+    display: flex;
+    grid-area: sidebar;
+    padding: 0 30px;
+}
+
+.sidebar nav{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.sidebar nav a {
+    color: black;
+    padding: 25px 30px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+
+
+.sidebar nav a:hover{ 
+    background-color: rgb(93, 204, 169);
+    color: white;
+}
+
+@media(min-width: 768px){
+    header nav{
+        display: flex;
+    }
+    
+    .menu-hamburguer{
+        display: none;
+    }
+
+}
+
+@media(min-width: 992px){
+    .grid{
+        grid-template-areas:
+        "header header header header header"
+        "mano mano mano . sidebar"
+        "mano mano mano . sidebar";
+    }
+
+    .sidebar {
+        border-radius: 25px;
+        box-shadow: 1px 1px 15px 40px rgb(0, 0, 0, 0.1)
+        margin: 5px;
+
+    }
+    .sidebar nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media(min-width: 1200px){
+    main{
+        margin: auto;
+        max-width: 1200px;
+    }
+
+}
