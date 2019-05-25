@@ -1,0 +1,12 @@
+h1 {
+    color: darkred;
+}
+
+h2 {
+    color: purple;
+}
+
+ul{
+    border: 1px solid black;
+    background-color: gray;
+}

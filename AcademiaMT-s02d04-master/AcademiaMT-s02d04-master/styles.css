@@ -1,0 +1,28 @@
+.quadrado {
+    opacity: 0;
+    height: 300px;
+    transition: 0.5s;
+    width: 300px;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.com-bordas{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.visivel {
+    opacity: 1;
+}
+
+img{
+    opacity: 0.2;
+    transition: 1s;
+}
+.destaque {
+    opacity: 1;
+    transform: scale(1.1);
+}
