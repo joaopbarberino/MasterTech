@@ -1,0 +1,64 @@
+body {
+    background-color: #363738;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+header{
+    background-color: darkred;
+
+}
+
+section p{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.nav-header a{
+    color: black;
+    text-decoration: none;
+
+}
+
+.cor-roxa {
+    color: purple;
+}
+
+#header-pesquisa{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+#header-pesquisa::placeholder{
+    color: yellow;
+
+}
+
+textarea{
+    resize: none;
+    margin: 0;
+
+}
+
+.formulario-contato{
+    /* background-color; */
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px 15px rgba(255, 255, 255, 0.116);
+
+}
+.formulario-contato p, .formulario-contato h3{
+    font-size: 18pt;
+}
+
+.negrito{
+    font-weight: bold;
+
+}
+
+.negrito:hover{
+    font-weight: normal;
+    cursor: pointer;
+}
+
+
+
